@@ -88,9 +88,9 @@ export default function EnergyBalanceExercise() {
         <p className="text-sm text-gray-600 leading-relaxed">
           The model is calibrated so that with planetary albedo = 0.30, Earth’s
           mean surface temperature is 288 K (preindustrial climate with natural
-          greenhouse gases, C₀). The canonical no-greenhouse effective temperature
-          (α=0.30) is 255 K. Please enter additional anthropogenic CO₂ forcing
-          (ΔF) relative to preindustrial levels (C₀ ppm) to see its warming effect.
+          greenhouse gases). The canonical no-greenhouse effective temperature
+          (α=0.30) is 255 K. Please enter anthropogenic CO₂ forcing
+          (ΔF) associated with the change in CO₂ concentrations (from C₀ to C, in ppm) over a chosen time period to see its warming effect.
         </p>
 
         {/* Controls */}
@@ -153,8 +153,8 @@ export default function EnergyBalanceExercise() {
                 <code>ΔF = 5.35 × ln(C / C₀)</code> (W/m²)
               </li>
               <li>
-                Take C₀ (preindustrial CO₂). Compute ΔF for a chosen CO₂
-                level C (e.g., today), then enter ΔF in the slider above.
+                Take C₀ (year X). Compute ΔF for a chosen CO₂
+                level C (year Y), then enter ΔF in the slider above.
               </li>
             </ul>
           </Card>
